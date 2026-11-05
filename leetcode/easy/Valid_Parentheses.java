@@ -37,23 +37,6 @@ public class Valid_Parentheses {
 
         return stack.isEmpty();
 
-        // else if ((s.contains("{") && s.contains("}")) ||
-        // (s.contains("[") && s.contains("]")) ||
-        // (s.contains("(") && s.contains(")"))) {
-        // return true;
-
-        // cek isi string
-        // for (int i = 0; i < s.length(); i++) {
-        // // cek apakah cukup bracket-nya
-        // if ((s.contains("{") ) ||
-        // (s.contains("(") && s.contains(")") ||
-        // (s.contains("[") && s.contains("]")))) {
-        // return true;
-        // } else {
-        // return false;
-        // }
-        // }
-
     }
 
 }
