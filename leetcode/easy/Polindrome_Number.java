@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+
+public class Polindrome_Number {
+
+    public static void main(String[] args) {
+        boolean palindrome = isPalindrome(1000021);
+
+        System.out.println(palindrome);
+    }
+
+    public static boolean isPalindrome(int x) {
+
+        int original = x;
+        int reverse = 0;
+
+        while (x > 0) {
+            int digit = x % 10;
+            reverse = reverse * 10 + digit;
+            x /= 10;
+        }
+
+        return original == reverse;
+    }
+
+}
