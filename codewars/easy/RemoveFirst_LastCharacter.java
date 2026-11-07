@@ -22,11 +22,10 @@ public class RemoveFirst_LastCharacter {
     public static String remove(String str) {
 
         if (str.length() > 2) {
-
             StringBuilder stringBuilder = new StringBuilder(str);
-
             StringBuilder start = stringBuilder.deleteCharAt(0);
             stringBuilder.deleteCharAt(start.length() - 1);
+            
             return stringBuilder.toString();
         } else {
             return "";
