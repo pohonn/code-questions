@@ -1,4 +1,4 @@
-package easy;
+// package easy;
 
 /**
  * Task
@@ -25,7 +25,7 @@ public class RemoveFirst_LastCharacter {
             StringBuilder stringBuilder = new StringBuilder(str);
             StringBuilder start = stringBuilder.deleteCharAt(0);
             stringBuilder.deleteCharAt(start.length() - 1);
-            
+
             return stringBuilder.toString();
         } else {
             return "";

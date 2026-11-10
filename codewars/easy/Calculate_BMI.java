@@ -1,4 +1,4 @@
-package easy;
+// package easy;
 
 public class Calculate_BMI {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package easy;
+// package easy;
 
 /**
  * Complete the function that accepts a string parameter, and reverses each word
@@ -11,14 +11,13 @@ package easy;
 
 public class Reverse_Words {
     public static void main(String[] args) {
-        // System.out.println(reverseWords("elbuod secaps"));
-        reverseWords("elbuod secaps");
+        System.out.println(reverseWords(" elbuod secaps "));
     }
 
     public static String reverseWords(final String original) {
 
-        String[] words = original.split(" ");
-        StringBuilder result = new StringBuilder(original);
+        String[] words = original.split(" "); // menjadikan setiap kata jadi array dan hapus space
+        StringBuilder result = new StringBuilder();
 
         // for (var string : words) {
         // System.out.println(string);
@@ -31,9 +30,9 @@ public class Reverse_Words {
             reversedWord.reverse(); // [double, space]
             result.append(reversedWord);
 
-            if (i < words.length - 1) {
-                result.append(" "); // tambah space di antara value
-            }
+            // if (i < words.length - 1) {
+            result.append(" "); // tambah space di antara value
+            // }
         }
 
         return result.toString();

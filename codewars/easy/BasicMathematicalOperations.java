@@ -1,4 +1,4 @@
-package easy;
+// package easy;
 
 public class BasicMathematicalOperations {
 
